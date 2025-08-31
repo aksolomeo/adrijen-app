@@ -9,7 +9,7 @@
 
 <template>
 	<section class="home-page">
-		<div class="home-page__welcome-msg">Welcome, {{ userNickname }}, you dirty slut! :P</div>
+		<div class="home-page__welcome-msg">Welcome to my homepage, {{ userNickname }}!</div>
 	</section>
 </template>
 
