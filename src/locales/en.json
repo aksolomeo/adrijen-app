@@ -1,0 +1,13 @@
+{
+	"VIEWS": {
+		"LANDING": {
+			"AGREEMENT": "I hereby confirm that I am an adult (18+) and that I am considering hiring Adrijen Ribić — a decision that may or may not turn out to be the best I’ve ever made.",
+			"INPUT": {
+				"LABEL": "Nickname",
+				"PLACEHOLDER": "Your nickname goes here",
+				"VALIDATION_MSG": "Please enter your nickname"
+			},
+			"BUTTON": "ENTER WEBSITE"
+		}
+	}
+}
