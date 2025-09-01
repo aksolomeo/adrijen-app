@@ -1,6 +1,7 @@
 <script setup lang="ts">
 	import { useMainStore } from "../stores/mainStore";
 	import { storeToRefs } from "pinia";
+	import { DownloadOutlined } from "@ant-design/icons-vue";
 
 	const mainStore = useMainStore();
 
@@ -13,6 +14,18 @@
 			<div class="home-page__welcome-msg--title">
 				{{ $t("VIEWS.HOME.WELCOME_TEXT.TITLE", { userAlias }) }}
 			</div>
+
+			<div class="home-page__welcome-msg--description">
+				{{ $t("VIEWS.HOME.WELCOME_TEXT.DESCRIPTION") }}
+			</div>
+
+			<a-button type="primary" href="/Adrijen Ribić CV.pdf" class="home-page__welcome-msg--btn">
+				<template #icon>
+					<DownloadOutlined />
+				</template>
+
+				{{ $t("VIEWS.HOME.WELCOME_TEXT.BUTTON") }}
+			</a-button>
 		</div>
 	</section>
 </template>
@@ -22,11 +35,27 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
 		height: 100vh;
 
 		&__welcome-msg {
-			font-size: 40px;
+			display: flex;
+			flex-direction: column;
+			width: 800px;
+			margin-top: 200px;
+
+			&--title {
+				font-size: 40px;
+			}
+
+			&--description {
+				font-size: 16px;
+				white-space: pre-line;
+			}
+
+			&--btn {
+				margin-top: 16px;
+				width: 200px;
+			}
 		}
 	}
 </style>
