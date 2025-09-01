@@ -70,7 +70,7 @@
 		justify-content: center;
 		align-items: center;
 		height: 100vh;
-		background-color: #d3dad9;
+		background: #f0f2f5;
 		user-select: none;
 
 		&__inner-wrapper {

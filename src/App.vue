@@ -1,10 +1,13 @@
 <script setup lang="ts">
-	import { ref } from "vue";
 	import { RouterView } from "vue-router";
+	import { useMainStore } from "./stores/mainStore";
+	import { storeToRefs } from "pinia";
 	import LandingPage from "./views/LandingPage.vue";
 	import Sidebar from "./components/Sidebar.vue";
 
-	const showLandingPage = ref(true);
+	const mainStore = useMainStore();
+
+	const { showLandingPage } = storeToRefs(mainStore);
 
 	const enterSite = () => {
 		showLandingPage.value = false;
@@ -14,26 +17,20 @@
 <template>
 	<LandingPage v-if="showLandingPage" @enter="enterSite" />
 
-	<main v-else>
-		<section>
+	<a-layout v-else>
+		<a-layout-sider collapsible>
 			<Sidebar />
-		</section>
+		</a-layout-sider>
 
-		<section>
+		<a-layout-content>
 			<RouterView />
-		</section>
-	</main>
+		</a-layout-content>
+	</a-layout>
 </template>
 
 <style scoped lang="scss">
-	main {
-		display: flex;
-		flex-direction: row;
-		max-height: 100vh;
+	.ant-layout {
+		height: 100vh;
 		user-select: none;
-
-		& section:last-child {
-			flex: 1;
-		}
 	}
 </style>

@@ -1,11 +1,18 @@
 import { ref } from "vue";
 import { defineStore } from "pinia";
 
-export const useMainStore = defineStore("mainStore", () => {
-	// * State
-	const userAlias = ref<string>("");
+export const useMainStore = defineStore(
+	"mainStore",
+	() => {
+		// * State
+		const userAlias = ref<string>("");
+		const showLandingPage = ref<boolean>(true);
 
-	// * Actions
+		// * Actions
 
-	return { userAlias };
-});
+		return { userAlias, showLandingPage };
+	},
+	{
+		persist: { storage: sessionStorage },
+	}
+);
