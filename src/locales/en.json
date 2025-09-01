@@ -11,7 +11,8 @@
 		"HOME": {
 			"WELCOME_TEXT": {
 				"TITLE": "Welcome, {userAlias}!",
-				"DESCRIPTION": "Description goes here"
+				"DESCRIPTION": "Hi, I’m Adrijen — a Fullstack Developer crafting modern, intuitive, responsive, and polished web applications. I help companies transform ideas into digital products that make an impact. Feel free to explore my website to learn more about me.\n\nFor a quick overview, my one-page CV is also available for download below.",
+				"BUTTON": "Download CV"
 			}
 		}
 	},
