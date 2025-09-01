@@ -15,4 +15,14 @@ export default defineConfig({
 			"@": fileURLToPath(new URL("./src", import.meta.url)),
 		},
 	},
+	css: {
+		preprocessorOptions: {
+			less: {
+				modifyVars: {
+					"primary-color": "#039fb0", // Ant design primary color
+				},
+				javascriptEnabled: true,
+			},
+		},
+	},
 });

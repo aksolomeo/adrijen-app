@@ -11,7 +11,7 @@ import en from "./locales/en.json";
 
 // * Ant Design
 import Antd from "ant-design-vue";
-import "ant-design-vue/dist/antd.css";
+import "ant-design-vue/dist/antd.less";
 
 // * Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
