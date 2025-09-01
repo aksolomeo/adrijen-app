@@ -3,9 +3,9 @@ import { defineStore } from "pinia";
 
 export const useMainStore = defineStore("mainStore", () => {
 	// * State
-	const userNickname = ref<string>("");
+	const userAlias = ref<string>("");
 
 	// * Actions
 
-	return { userNickname };
+	return { userAlias };
 });
