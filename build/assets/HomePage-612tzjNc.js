@@ -1,1 +1,0 @@
-import{d as o,u as a,s as t,c,a as n,t as _,b as r,o as m,_ as i}from"./index-DpRR44aH.js";const p={class:"home-page"},d={class:"home-page__welcome-msg"},l=o({__name:"HomePage",setup(u){const e=a(),{userNickname:s}=t(e);return(f,g)=>(m(),c("section",p,[n("div",d,"Welcome, "+_(r(s))+", you dirty slut! :P",1)]))}}),k=i(l,[["__scopeId","data-v-71210a44"]]);export{k as default};
