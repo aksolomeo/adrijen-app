@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import { ref, h } from "vue";
+	import { computed, h } from "vue";
 	import { useRouter, useRoute } from "vue-router";
 	import { useI18n } from "vue-i18n";
 	import { HomeOutlined, UserOutlined, MailOutlined } from "@ant-design/icons-vue";
@@ -8,7 +8,11 @@
 	const route = useRoute();
 
 	const { t } = useI18n();
-	const selectedKey = ref(route.path);
+	const selectedKey = computed(() => {
+		const item = menuItems.find(i => i.route === route.path);
+
+		return item ? item.key : "";
+	});
 
 	const menuItems = [
 		{ label: t("COMPONENTS.SIDEBAR.ITEMS.HOME"), key: "home", icon: h(HomeOutlined), route: "/" },
@@ -21,7 +25,6 @@
 
 		if (item) {
 			router.push(item.route);
-			selectedKey.value = key;
 		}
 	};
 </script>

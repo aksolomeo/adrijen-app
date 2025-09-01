@@ -1,7 +1,7 @@
 <script setup lang="ts">
 	import { useMainStore } from "../stores/mainStore";
 	import { storeToRefs } from "pinia";
-	import { DownloadOutlined } from "@ant-design/icons-vue";
+	import { FileTextOutlined } from "@ant-design/icons-vue";
 
 	const mainStore = useMainStore();
 
@@ -21,7 +21,7 @@
 
 			<a-button type="primary" href="/Adrijen Ribić CV.pdf" class="home-page__welcome-msg--btn">
 				<template #icon>
-					<DownloadOutlined />
+					<FileTextOutlined />
 				</template>
 
 				{{ $t("VIEWS.HOME.WELCOME_TEXT.BUTTON") }}
