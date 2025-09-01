@@ -8,10 +8,10 @@
 	const mainStore = useMainStore();
 
 	const { t } = useI18n();
-	const { userNickname } = storeToRefs(mainStore);
+	const { userAlias } = storeToRefs(mainStore);
 	const formRef = ref();
 	const rules = {
-		nickname: [{ required: true, message: t("VIEWS.LANDING.INPUT.VALIDATION_MSG"), trigger: "blur" }],
+		alias: [{ required: true, message: t("VIEWS.LANDING.INPUT.VALIDATION_MSG"), trigger: "blur" }],
 	};
 	const speechBubble = `
 ╭───────────────────────────────╮
@@ -27,12 +27,12 @@
 		formRef.value
 			.validate()
 			.then(() => {
-				if (userNickname.value) {
+				if (userAlias.value) {
 					emit("enter");
 				}
 			})
 			.catch(error => {
-				console.log("Nickname validation failed:", error);
+				console.log("Alias validation failed:", error);
 			});
 	};
 </script>
@@ -45,10 +45,10 @@
 			<section class="landing-page__greetings-wrapper">
 				<pre class="landing-page__speech-bubble">{{ speechBubble }}</pre>
 
-				<a-form ref="formRef" :model="{ nickname: userNickname }" :rules="rules" layout="vertical">
-					<a-form-item name="nickname">
+				<a-form ref="formRef" :model="{ alias: userAlias }" :rules="rules" layout="vertical">
+					<a-form-item name="alias">
 						<a-input
-							v-model:value="userNickname"
+							v-model:value="userAlias"
 							:addon-before="$t('VIEWS.LANDING.INPUT.LABEL')"
 							:placeholder="$t('VIEWS.LANDING.INPUT.PLACEHOLDER')"
 							class="landing-page__input"
@@ -56,7 +56,7 @@
 					</a-form-item>
 				</a-form>
 
-				<a-button type="primary" size="large" :disabled="!userNickname" class="landing-page__btn" @click="onEnter">
+				<a-button type="primary" size="large" :disabled="!userAlias" class="landing-page__btn" @click="onEnter">
 					{{ $t("VIEWS.LANDING.BUTTON") }}
 				</a-button>
 			</section>
@@ -104,7 +104,7 @@
 		}
 
 		&__btn {
-			width: 200px;
+			width: 150px;
 		}
 	}
 </style>

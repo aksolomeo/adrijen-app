@@ -7,6 +7,21 @@
 				"VALIDATION_MSG": "Please enter your alias"
 			},
 			"BUTTON": "LET'S GO!"
+		},
+		"HOME": {
+			"WELCOME_TEXT": {
+				"TITLE": "Welcome, {userAlias}!",
+				"DESCRIPTION": "Description goes here"
+			}
+		}
+	},
+	"COMPONENTS": {
+		"SIDEBAR": {
+			"ITEMS": {
+				"HOME": "Home",
+				"ABOUT_ME": "About me",
+				"CONTACT_ME": "Contact me"
+			}
 		}
 	}
 }

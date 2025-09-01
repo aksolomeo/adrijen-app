@@ -4,12 +4,16 @@
 
 	const mainStore = useMainStore();
 
-	const { userNickname } = storeToRefs(mainStore);
+	const { userAlias } = storeToRefs(mainStore);
 </script>
 
 <template>
 	<section class="home-page">
-		<div class="home-page__welcome-msg">Welcome to my homepage, {{ userNickname }}!</div>
+		<div class="home-page__welcome-msg">
+			<div class="home-page__welcome-msg--title">
+				{{ $t("VIEWS.HOME.WELCOME_TEXT.TITLE", { userAlias }) }}
+			</div>
+		</div>
 	</section>
 </template>
 
@@ -22,7 +26,6 @@
 		height: 100vh;
 
 		&__welcome-msg {
-			font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 			font-size: 40px;
 		}
 	}
