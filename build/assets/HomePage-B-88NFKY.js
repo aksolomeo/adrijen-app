@@ -1,1 +1,0 @@
-import{d as o,u as a,s as t,c,a as n,t as _,b as m,o as r,_ as p}from"./index-CZlJ3nIG.js";const i={class:"home-page"},d={class:"home-page__welcome-msg"},l=o({__name:"HomePage",setup(u){const e=a(),{userNickname:s}=t(e);return(f,g)=>(r(),c("section",i,[n("div",d,"Welcome to my homepage, "+_(m(s))+"!",1)]))}}),k=p(l,[["__scopeId","data-v-41180cb3"]]);export{k as default};
