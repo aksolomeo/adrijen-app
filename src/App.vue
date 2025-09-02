@@ -4,6 +4,7 @@
 	import { storeToRefs } from "pinia";
 	import LandingPage from "./views/LandingPage.vue";
 	import Sidebar from "./components/Sidebar.vue";
+	import TopBarNav from "./components/TopBarNav.vue";
 
 	const mainStore = useMainStore();
 
@@ -23,14 +24,8 @@
 		</a-layout-sider>
 
 		<a-layout-content>
+			<TopBarNav />
 			<RouterView />
 		</a-layout-content>
 	</a-layout>
 </template>
-
-<style scoped lang="scss">
-	.ant-layout {
-		height: 100vh;
-		user-select: none;
-	}
-</style>
