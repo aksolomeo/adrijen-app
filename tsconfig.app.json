@@ -22,7 +22,10 @@
 		"forceConsistentCasingInFileNames": true,
 		"outDir": "build",
 		"baseUrl": ".",
-		"lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+		"paths": {
+			"@/*": ["src/*"]
+		}
 	},
 	"exclude": ["**/node_modules", "**/dist"],
 	"ts-node": {

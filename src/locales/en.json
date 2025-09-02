@@ -23,6 +23,11 @@
 				"ABOUT_ME": "About me",
 				"CONTACT_ME": "Contact me"
 			}
+		},
+		"TOP_BAR_NAV": {
+			"CODE_BTN": {
+				"TOOLTIP": "View source on GitHub"
+			}
 		}
 	}
 }

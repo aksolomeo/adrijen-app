@@ -9,11 +9,6 @@
 		user-select: none;
 	}
 
-	.ant-btn {
-		border-radius: 8px;
-		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-	}
-
 	.ant-layout-sider-trigger {
 		background: #039fb0;
 
@@ -21,4 +16,17 @@
 			background: #22b2bd;
 		}
 	}
+	.ant-btn {
+		border-radius: 8px;
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.ant-tooltip {
+	user-select: none;
+}
+
+.ant-tooltip-inner {
+	border-radius: 4px !important;
+	user-select: none;
 }
