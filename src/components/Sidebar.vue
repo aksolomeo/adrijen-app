@@ -9,19 +9,19 @@
 
 	const { t } = useI18n();
 	const selectedKey = computed(() => {
-		const item = menuItems.find(i => i.route === route.path);
+		const item = menuItems.value.find(i => i.route === route.path);
 
 		return item ? item.key : "";
 	});
 
-	const menuItems = [
+	const menuItems = computed(() => [
 		{ label: t("COMPONENTS.SIDEBAR.ITEMS.HOME"), key: "home", icon: h(HomeOutlined), route: "/" },
 		{ label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME"), key: "about", icon: h(UserOutlined), route: "/about" },
 		{ label: t("COMPONENTS.SIDEBAR.ITEMS.CONTACT_ME"), key: "contact", icon: h(MailOutlined), route: "/contact" },
-	];
+	]);
 
 	const handleMenuClick = ({ key }) => {
-		const item = menuItems.find(i => i.key === key);
+		const item = menuItems.value.find(i => i.key === key);
 
 		if (item) {
 			router.push(item.route);
