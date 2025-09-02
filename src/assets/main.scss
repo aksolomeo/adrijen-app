@@ -11,5 +11,9 @@
 
 	.ant-layout-sider-trigger {
 		background: #039fb0;
+
+		&:hover {
+			background: #22b2bd;
+		}
 	}
 }
