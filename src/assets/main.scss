@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
+
+#app {
+	margin: 0 auto;
+	font-family: "Golos Text";
+
+	.ant-btn {
+		border-radius: 8px;
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.ant-layout-sider-trigger {
+		background: #039fb0;
+
+		&:hover {
+			background: #22b2bd;
+		}
+	}
+}

@@ -1,9 +1,10 @@
-import "./assets/main.css";
+import "./assets/main.scss";
 
 import { createApp } from "vue";
 
 // * Pinia Store
 import { createPinia } from "pinia";
+import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 
 // * i18n
 import { createI18n } from "vue-i18n";
@@ -11,7 +12,7 @@ import en from "./locales/en.json";
 
 // * Ant Design
 import Antd from "ant-design-vue";
-import "ant-design-vue/dist/antd.css";
+import "ant-design-vue/dist/antd.less";
 
 // * Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -24,6 +25,7 @@ import App from "./App.vue";
 import router from "./router";
 
 const app = createApp(App);
+const pinia = createPinia();
 
 const i18n = createI18n({
 	legacy: false,
@@ -32,8 +34,9 @@ const i18n = createI18n({
 	messages: { en },
 });
 
-app.use(createPinia());
 app.use(router);
+app.use(pinia);
+pinia.use(piniaPluginPersistedstate);
 app.use(i18n);
 app.use(Antd);
 

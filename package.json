@@ -16,6 +16,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.0.0",
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
     "@fortawesome/free-brands-svg-icons": "^7.0.0",
     "@fortawesome/free-regular-svg-icons": "^7.0.0",
@@ -24,6 +25,7 @@
     "ant-design-vue": "^3.2.20",
     "firebase": "^12.2.1",
     "pinia": "^3.0.3",
+    "pinia-plugin-persistedstate": "^4.5.0",
     "tslib": "^2.8.1",
     "vue": "^3.5.18",
     "vue-i18n": "^9.14.5",
@@ -39,6 +41,8 @@
     "eslint": "^9.34.0",
     "eslint-plugin-vue": "~10.3.0",
     "jiti": "^2.4.2",
+    "less": "^4.4.1",
+    "less-loader": "^12.3.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "3.6.2",
     "sass": "^1.91.0",

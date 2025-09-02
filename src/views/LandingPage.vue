@@ -1,7 +1,6 @@
 <script setup lang="ts">
 	import { ref } from "vue";
-	import parentalAdvisoryImg from "../assets/images/parental-advisory.png";
-	import warning18img from "../assets/images/warning-18-sign.png";
+	import adrijenAvatar from "../assets/images/adrijen-avatar.png";
 	import { useI18n } from "vue-i18n";
 	import { useMainStore } from "../stores/mainStore";
 	import { storeToRefs } from "pinia";
@@ -9,12 +8,18 @@
 	const mainStore = useMainStore();
 
 	const { t } = useI18n();
-	const { userNickname } = storeToRefs(mainStore);
+	const { userAlias } = storeToRefs(mainStore);
 	const formRef = ref();
-	const isAgreementChecked = ref(false);
 	const rules = {
-		nickname: [{ required: true, message: t("VIEWS.LANDING.INPUT.VALIDATION_MSG"), trigger: "blur" }],
+		alias: [{ required: true, message: t("VIEWS.LANDING.INPUT.VALIDATION_MSG"), trigger: "blur" }],
 	};
+	const speechBubble = `
+╭───────────────────────────────╮
+│ Greetings, visitor!           │
+│ Who do I have the pleasure    │
+│ of meeting?                   │
+│ Please type your alias below! │
+╰───────────────────────────────╯`;
 
 	const emit = defineEmits<(e: "enter") => void>();
 
@@ -22,68 +27,72 @@
 		formRef.value
 			.validate()
 			.then(() => {
-				if (isAgreementChecked.value) {
+				if (userAlias.value) {
 					emit("enter");
 				}
 			})
 			.catch(error => {
-				console.log("Nickname validation failed:", error);
+				console.log("Alias validation failed:", error);
 			});
 	};
 </script>
 
 <template>
 	<div class="landing-page">
-		<img :src="warning18img" alt="Logo" class="landing-page__img--warning18" />
-		<img :src="parentalAdvisoryImg" alt="Logo" class="landing-page__img--parentalAdvisory" />
+		<div class="landing-page__inner-wrapper">
+			<img :src="adrijenAvatar" alt="Logo" class="landing-page__avatar" />
 
-		<a-form ref="formRef" :model="{ nickname: userNickname }" :rules="rules" layout="vertical">
-			<a-form-item name="nickname">
-				<a-input
-					v-model:value="userNickname"
-					:addon-before="$t('VIEWS.LANDING.INPUT.LABEL')"
-					:placeholder="$t('VIEWS.LANDING.INPUT.PLACEHOLDER')"
-					class="landing-page__input"
-				/>
-			</a-form-item>
-		</a-form>
+			<section class="landing-page__greetings-wrapper">
+				<pre class="landing-page__speech-bubble">{{ speechBubble }}</pre>
 
-		<div class="landing-page__agreement">
-			<a-checkbox v-model:checked="isAgreementChecked" class="landing-page__agreement--checkbox" />
-			<span class="landing-page__agreement--text">{{ $t("VIEWS.LANDING.AGREEMENT") }}</span>
+				<a-form ref="formRef" :model="{ alias: userAlias }" :rules="rules" layout="vertical">
+					<a-form-item name="alias">
+						<a-input
+							v-model:value="userAlias"
+							:addon-before="$t('VIEWS.LANDING.INPUT.LABEL')"
+							:placeholder="$t('VIEWS.LANDING.INPUT.PLACEHOLDER')"
+							class="landing-page__input"
+						/>
+					</a-form-item>
+				</a-form>
+
+				<a-button type="primary" size="large" :disabled="!userAlias" class="landing-page__btn" @click="onEnter">
+					{{ $t("VIEWS.LANDING.BUTTON") }}
+				</a-button>
+			</section>
 		</div>
-
-		<a-button type="primary" size="large" :disabled="!isAgreementChecked" danger @click="onEnter">
-			{{ $t("VIEWS.LANDING.BUTTON") }}
-		</a-button>
 	</div>
 </template>
 
 <style scoped lang="scss">
 	.landing-page {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		height: 100vh;
+		background: #f0f2f5;
 		user-select: none;
 
-		&__img {
-			&--warning18 {
-				position: absolute;
-				top: 48px;
-				right: 48px;
-				width: 200px;
-			}
+		&__inner-wrapper {
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
 
-			&--parentalAdvisory {
-				width: 700px;
-			}
+		&__greetings-wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-top: 48px;
+			margin-left: -5em;
+		}
+
+		&__avatar {
+			width: 500px;
 		}
 
 		&__input {
-			margin-top: 24px;
-			width: 350px;
+			width: 300px;
 
 			:deep(.ant-input-group-addon) {
 				border-radius: 8px 0 0 8px;
@@ -94,15 +103,8 @@
 			}
 		}
 
-		&__agreement {
-			width: 600px;
-			text-align: center;
-			margin: 24px 0;
-			font-style: italic;
-
-			&--text {
-				margin-left: 12px;
-			}
+		&__btn {
+			width: 150px;
 		}
 	}
 </style>
