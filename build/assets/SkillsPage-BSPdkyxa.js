@@ -1,0 +1,1 @@
+import{_ as s,a as e,o as c}from"./index-B5h6x6iL.js";const a={},o={class:"skills-page"};function t(_,n){return c(),e("section",o,"This is skills page")}const r=s(a,[["render",t],["__scopeId","data-v-7321ac72"]]);export{r as default};
