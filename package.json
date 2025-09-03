@@ -24,6 +24,7 @@
     "@fortawesome/vue-fontawesome": "^3.1.1",
     "ant-design-vue": "^3.2.20",
     "firebase": "^12.2.1",
+    "flag-icons": "^7.5.0",
     "pinia": "^3.0.3",
     "pinia-plugin-persistedstate": "^4.5.0",
     "tslib": "^2.8.1",

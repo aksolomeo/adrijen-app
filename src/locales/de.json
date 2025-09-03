@@ -1,0 +1,28 @@
+{
+	"VIEWS": {
+		"LANDING": {
+			"INPUT": {
+				"LABEL": "Alias",
+				"PLACEHOLDER": "Dein Alias hier",
+				"VALIDATION_MSG": "Bitte gib deinen Alias ein"
+			},
+			"BUTTON": "LOS!"
+		},
+		"HOME": {
+			"WELCOME_TEXT": {
+				"TITLE": "Willkommen, {userAlias}!",
+				"DESCRIPTION": "Hallo, ich bin Adrijen — Fullstack-Entwickler und erstelle moderne, intuitive, responsive und ansprechende Webanwendungen. Ich helfe Unternehmen, Ideen in digitale Produkte umzusetzen, die Wirkung zeigen. Schau dich gerne auf meiner Website um, um mehr über mich zu erfahren.\n\nFür einen schnellen Überblick kannst du meinen einseitigen Lebenslauf ansehen:",
+				"BUTTON": "Meinen CV ansehen"
+			}
+		}
+	},
+	"COMPONENTS": {
+		"SIDEBAR": {
+			"ITEMS": {
+				"HOME": "Startseite",
+				"ABOUT_ME": "Über mich",
+				"CONTACT_ME": "Kontakt"
+			}
+		}
+	}
+}

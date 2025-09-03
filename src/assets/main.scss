@@ -4,9 +4,9 @@
 	margin: 0 auto;
 	font-family: "Golos Text";
 
-	.ant-btn {
-		border-radius: 8px;
-		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+	.ant-layout {
+		height: 100vh;
+		user-select: none;
 	}
 
 	.ant-layout-sider-trigger {
@@ -16,4 +16,21 @@
 			background: #22b2bd;
 		}
 	}
+	.ant-btn {
+		border-radius: 8px;
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.ant-tooltip {
+	user-select: none;
+}
+
+.ant-tooltip-inner {
+	border-radius: 4px !important;
+	user-select: none;
+}
+
+.ant-menu-submenu {
+	user-select: none;
 }

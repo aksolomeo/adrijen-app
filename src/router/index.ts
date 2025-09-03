@@ -10,8 +10,51 @@ const router = createRouter({
 		},
 		{
 			path: "/about",
-			name: "about",
-			component: () => import("../views/AboutPage.vue"),
+			redirect: "/about/education",
+			children: [
+				{
+					path: "/about/education",
+					name: "education",
+					meta: { title: "COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.EDUCATION" },
+					component: () => import("../views/EducationPage.vue"),
+				},
+				{
+					path: "/about/skills",
+					name: "skills",
+					meta: { title: "COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.SKILLS" },
+					component: () => import("../views/SkillsPage.vue"),
+				},
+				{
+					path: "/about/interests",
+					name: "interests",
+					meta: { title: "COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.INTERESTS" },
+					component: () => import("../views/InterestsPage.vue"),
+				},
+			],
+		},
+		{
+			path: "/career",
+			redirect: "/career/portfolio",
+			children: [
+				{
+					path: "/career/portfolio",
+					name: "portfolio",
+					meta: { title: "COMPONENTS.SIDEBAR.ITEMS.CAREER.SUB_MENU.PORTFOLIO" },
+					component: () => import("../views/PortfolioPage.vue"),
+				},
+				{
+					path: "/career/experience",
+					name: "experience",
+					meta: { title: "COMPONENTS.SIDEBAR.ITEMS.CAREER.SUB_MENU.EXPERIENCE" },
+					component: () => import("../views/ExperiencePage.vue"),
+				},
+			],
+		},
+		{
+			path: "/contact",
+			name: "contact",
+			meta: { title: "COMPONENTS.SIDEBAR.ITEMS.CONTACT" },
+			component: () => import("../views/ContactPage.vue"),
 		},
 	],
 });

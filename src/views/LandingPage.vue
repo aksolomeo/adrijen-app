@@ -84,7 +84,7 @@
 			flex-direction: column;
 			justify-content: center;
 			margin-top: 48px;
-			margin-left: -5em;
+			margin-left: -8%;
 		}
 
 		&__avatar {

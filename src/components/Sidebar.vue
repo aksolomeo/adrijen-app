@@ -2,28 +2,121 @@
 	import { computed, h } from "vue";
 	import { useRouter, useRoute } from "vue-router";
 	import { useI18n } from "vue-i18n";
-	import { HomeOutlined, UserOutlined, MailOutlined } from "@ant-design/icons-vue";
+	import {
+		HomeOutlined,
+		UserOutlined,
+		MailOutlined,
+		ReadOutlined,
+		StarOutlined,
+		SolutionOutlined,
+		FolderOpenOutlined,
+		ToolOutlined,
+		ProfileOutlined,
+	} from "@ant-design/icons-vue";
+	import type { SidebarItem, SidebarItems } from "@/interfaces/sidebar";
 
 	const router = useRouter();
 	const route = useRoute();
 
 	const { t } = useI18n();
-	const selectedKey = computed(() => {
-		const item = menuItems.find(i => i.route === route.path);
 
-		return item ? item.key : "";
+	const menuItems = computed<SidebarItems>(() => [
+		{
+			label: t("COMPONENTS.SIDEBAR.ITEMS.HOME"),
+			key: "home",
+			icon: h(HomeOutlined),
+			route: "/",
+		},
+		{
+			label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.LABEL"),
+			key: "about",
+			icon: h(UserOutlined),
+			route: "/about",
+			children: [
+				{
+					label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.EDUCATION"),
+					key: "education",
+					icon: h(ReadOutlined),
+					route: "/about/education",
+				},
+				{
+					label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.SKILLS"),
+					key: "skills",
+					icon: h(ToolOutlined),
+					route: "/about/skills",
+				},
+				{
+					label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.INTERESTS"),
+					key: "interests",
+					icon: h(StarOutlined),
+					route: "/about/interests",
+				},
+			],
+		},
+		{
+			label: t("COMPONENTS.SIDEBAR.ITEMS.CAREER.LABEL"),
+			key: "career",
+			icon: h(ProfileOutlined),
+			route: "/career",
+			children: [
+				{
+					label: t("COMPONENTS.SIDEBAR.ITEMS.CAREER.SUB_MENU.PORTFOLIO"),
+					key: "portfolio",
+					icon: h(FolderOpenOutlined),
+					route: "/career/portfolio",
+				},
+				{
+					label: t("COMPONENTS.SIDEBAR.ITEMS.CAREER.SUB_MENU.EXPERIENCE"),
+					key: "experience",
+					icon: h(SolutionOutlined),
+					route: "/career/experience",
+				},
+			],
+		},
+		{
+			label: t("COMPONENTS.SIDEBAR.ITEMS.CONTACT"),
+			key: "contact",
+			icon: h(MailOutlined),
+			route: "/contact",
+		},
+	]);
+
+	const selectedKey = computed(() => {
+		const findKey = (items: SidebarItems, path: string): string | null => {
+			for (const item of items) {
+				if (item.route === path) return item.key;
+
+				if (item.children) {
+					const childKey = findKey(item.children, path);
+
+					if (childKey) return childKey;
+				}
+			}
+
+			return null;
+		};
+
+		return findKey(menuItems.value, route.path) || "";
 	});
 
-	const menuItems = [
-		{ label: t("COMPONENTS.SIDEBAR.ITEMS.HOME"), key: "home", icon: h(HomeOutlined), route: "/" },
-		{ label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME"), key: "about", icon: h(UserOutlined), route: "/about" },
-		{ label: t("COMPONENTS.SIDEBAR.ITEMS.CONTACT_ME"), key: "contact", icon: h(MailOutlined), route: "/contact" },
-	];
+	const handleMenuClick = ({ key }: { key: string }) => {
+		const findItem = (items: SidebarItems, key: string): SidebarItem | null => {
+			for (const item of items) {
+				if (item.key === key) return item;
 
-	const handleMenuClick = ({ key }) => {
-		const item = menuItems.find(i => i.key === key);
+				if (item.children) {
+					const found = findItem(item.children, key);
 
-		if (item) {
+					if (found) return found;
+				}
+			}
+
+			return null;
+		};
+
+		const item = findItem(menuItems.value, key);
+
+		if (item && item.route) {
 			router.push(item.route);
 		}
 	};
@@ -31,9 +124,22 @@
 
 <template>
 	<a-menu mode="inline" :selected-keys="[selectedKey]" @click="handleMenuClick" class="sidebar">
-		<a-menu-item v-for="item in menuItems" :key="item.key" :icon="item.icon">
-			<span>{{ item.label }}</span>
-		</a-menu-item>
+		<template v-for="item in menuItems" :key="item.key">
+			<a-sub-menu v-if="item.children" :key="item.route">
+				<template #title>
+					<span>
+						<component :is="item.icon" />
+						<span>{{ item.label }}</span>
+					</span>
+				</template>
+
+				<a-menu-item v-for="child in item.children" :key="child.key" :icon="child.icon">
+					{{ child.label }}
+				</a-menu-item>
+			</a-sub-menu>
+
+			<a-menu-item v-else :key="item.key" :icon="item.icon">{{ item.label }}</a-menu-item>
+		</template>
 	</a-menu>
 </template>
 

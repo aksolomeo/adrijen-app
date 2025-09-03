@@ -9,6 +9,8 @@ import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 // * i18n
 import { createI18n } from "vue-i18n";
 import en from "./locales/en.json";
+import de from "./locales/de.json";
+import fr from "./locales/fr.json";
 
 // * Ant Design
 import Antd from "ant-design-vue";
@@ -21,17 +23,20 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 
+// * Flag Icons
+import "flag-icons/css/flag-icons.min.css";
+
 import App from "./App.vue";
 import router from "./router";
 
 const app = createApp(App);
 const pinia = createPinia();
 
-const i18n = createI18n({
+export const i18n = createI18n({
 	legacy: false,
 	locale: "en",
 	fallbackLocale: "en",
-	messages: { en },
+	messages: { en, de, fr },
 });
 
 app.use(router);
