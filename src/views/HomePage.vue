@@ -41,7 +41,7 @@
 			display: flex;
 			flex-direction: column;
 			width: 800px;
-			margin-top: 200px;
+			margin-top: 12%;
 
 			&--title {
 				font-size: 40px;

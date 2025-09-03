@@ -14,6 +14,18 @@
 				"DESCRIPTION": "Hi, I’m Adrijen — a Fullstack Developer with 5+ years of experience crafting modern, intuitive, responsive, and polished web applications. I help companies transform ideas into digital products that make an impact. Feel free to explore my website to learn more about me.\n\nFor a quick overview, you can check my one-page CV:",
 				"BUTTON": "View my CV"
 			}
+		},
+		"EDUCATION": {
+			"DIPLOMA_COMPUTER_SCIENCE": {
+				"TITLE": "Diploma of AP Degree in Computer Science",
+				"EDUCATIONAL_INSTITUTION": "Business Academy Aarhus",
+				"DETAILS": "2015 - 2018 · Aarhus"
+			},
+			"DIPLOMA_WEB_DEVELOPMENT": {
+				"TITLE": "Diploma of Bachelor's Degree Programme in Web Development",
+				"EDUCATIONAL_INSTITUTION": "Business Academy Aarhus",
+				"DETAILS": "2019 - 2021 · Aarhus"
+			}
 		}
 	},
 	"COMPONENTS": {
