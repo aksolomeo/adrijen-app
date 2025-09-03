@@ -1,1 +1,0 @@
-import{_ as o,a as s,b as t,o as a}from"./index-a2SAV7_s.js";const n={},c={class:"about-page"};function r(_,e){return a(),s("section",c,[...e[0]||(e[0]=[t("h1",null,"This is an about page",-1)])])}const l=o(n,[["render",r]]);export{l as default};
