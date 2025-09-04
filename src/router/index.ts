@@ -19,10 +19,10 @@ const router = createRouter({
 					component: () => import("../views/EducationPage.vue"),
 				},
 				{
-					path: "/about/skills",
-					name: "skills",
-					meta: { title: "COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.SKILLS" },
-					component: () => import("../views/SkillsPage.vue"),
+					path: "/about/skills-and-tools",
+					name: "skills-and-tools",
+					meta: { title: "COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.SKILLS_AND_TOOLS" },
+					component: () => import("../views/SkillsAndToolsPage.vue"),
 				},
 				{
 					path: "/about/interests",
