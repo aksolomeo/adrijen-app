@@ -26,6 +26,16 @@
 				"EDUCATIONAL_INSTITUTION": "Business Academy Aarhus",
 				"DETAILS": "2019 - 2021 · Aarhus"
 			}
+		},
+		"INTEREST": {
+			"MUSIC_PRODUCTION": {
+				"TITLE": "Music Production",
+				"DESCRIPTION": "Below are two original tracks composed\n as soundtracks for a game"
+			},
+			"GUITAR": {
+				"TITLE": "Guitar",
+				"DESCRIPTION": "Guitar has been my passion for almost 20 years,\n during which I have played both in bands and as a solo musician."
+			}
 		}
 	},
 	"COMPONENTS": {
