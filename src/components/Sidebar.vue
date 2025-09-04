@@ -13,7 +13,7 @@
 		ToolOutlined,
 		ProfileOutlined,
 	} from "@ant-design/icons-vue";
-	import type { SidebarItem, SidebarItems } from "@/interfaces/sidebar";
+	import type { SidebarItem, SidebarItems } from "@/interfaces";
 
 	const router = useRouter();
 	const route = useRoute();
@@ -40,10 +40,10 @@
 					route: "/about/education",
 				},
 				{
-					label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.SKILLS"),
-					key: "skills",
+					label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.SKILLS_AND_TOOLS"),
+					key: "skills-and-tools",
 					icon: h(ToolOutlined),
-					route: "/about/skills",
+					route: "/about/skills-and-tools",
 				},
 				{
 					label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.INTERESTS"),

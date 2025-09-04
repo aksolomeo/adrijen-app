@@ -8,4 +8,10 @@ export interface SidebarItem {
 	children?: SidebarItem[];
 }
 
+export interface SkillsAndToolsItem {
+	skill: string;
+	rating: number;
+}
+
 export type SidebarItems = SidebarItem[];
+export type SkillsAndTools = SkillsAndToolsItem[];
