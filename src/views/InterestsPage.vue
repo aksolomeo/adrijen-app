@@ -29,7 +29,7 @@
 							src: dandelion,
 						},
 					]"
-					theme-color="#039fb0"
+					theme-color="#0578ad"
 					:show-name="true"
 				/>
 
@@ -47,7 +47,7 @@
 							src: hemomancerTheme,
 						},
 					]"
-					theme-color="#039fb0"
+					theme-color="#0578ad"
 					:show-name="true"
 				/>
 
@@ -99,7 +99,7 @@
 		display: flex;
 		justify-content: center;
 		padding: 48px;
-		background: #f0f2f5;
+		background: #e8eff6;
 		margin-top: 10%;
 
 		&__cards-wrapper {
@@ -122,7 +122,7 @@
 				&__track-title {
 					text-align: center;
 					font-size: 12px;
-					color: #039fb0;
+					color: #0578ad;
 					margin-top: -20px;
 				}
 			}

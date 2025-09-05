@@ -19,7 +19,13 @@
 				{{ $t("VIEWS.HOME.WELCOME_TEXT.DESCRIPTION") }}
 			</div>
 
-			<a-button type="primary" href="/Adrijen Ribić CV.pdf" class="home-page__welcome-msg--btn">
+			<a-button
+				type="primary"
+				href="/Adrijen Ribić CV.pdf"
+				class="home-page__welcome-msg--btn"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<template #icon>
 					<FileTextOutlined />
 				</template>
