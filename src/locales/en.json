@@ -26,6 +26,28 @@
 				"EDUCATIONAL_INSTITUTION": "Business Academy Aarhus",
 				"DETAILS": "2019 - 2021 · Aarhus"
 			}
+		},
+		"INTEREST": {
+			"MUSIC_PRODUCTION": {
+				"TITLE": "Music Production",
+				"DESCRIPTION": "I have composed the following two original tracks\n at my home studio.",
+				"TRACK_TITLES": {
+					"DANDELION": "Dandelion",
+					"HEMOMANCER_MAIN_THEME": "Hemomancer Main Theme"
+				}
+			},
+			"GUITAR": {
+				"TITLE": "Guitar",
+				"DESCRIPTION": "Guitar has been my passion for almost 20 years, during which I have played both in bands and as a solo musician."
+			},
+			"TRAVELING_AND_HIKING": {
+				"TITLE": "Traveling & Hiking",
+				"DESCRIPTION": "I enjoy traveling, hiking and camping.\n I love to be active, experience different cultures and build meaningful connections with people and nature."
+			},
+			"SPORTS": {
+				"TITLE": "Sports",
+				"DESCRIPTION": "Enthusiastic about both playing and following sports, including football, tennis, handball, table tennis, pool, and chess."
+			}
 		}
 	},
 	"COMPONENTS": {
