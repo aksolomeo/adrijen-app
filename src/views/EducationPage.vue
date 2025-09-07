@@ -20,7 +20,7 @@
 			</div>
 
 			<div class="education-page__left-side--details">
-				<a href="https://www.baaa.dk/" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.baaa.dk/" target="_blank" rel="noopener noreferrer" style="color: #039fb0">
 					{{ $t("VIEWS.EDUCATION.DIPLOMA_COMPUTER_SCIENCE.EDUCATIONAL_INSTITUTION") }}
 					<fa-icon icon="arrow-up-right-from-square" />
 				</a>
@@ -41,7 +41,7 @@
 			</div>
 
 			<div class="education-page__right-side--details">
-				<a href="https://www.baaa.dk/" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.baaa.dk/" target="_blank" rel="noopener noreferrer" style="color: #039fb0">
 					{{ $t("VIEWS.EDUCATION.DIPLOMA_WEB_DEVELOPMENT.EDUCATIONAL_INSTITUTION") }}
 					<fa-icon icon="arrow-up-right-from-square" />
 				</a>

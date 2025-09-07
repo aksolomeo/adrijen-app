@@ -10,10 +10,10 @@
 	}
 
 	.ant-layout-sider-trigger {
-		background: #039fb0;
+		background: #0578ad;
 
 		&:hover {
-			background: #22b2bd;
+			background: #238fba;
 		}
 	}
 	.ant-btn {
@@ -36,5 +36,9 @@
 }
 
 .ant-rate-star {
-	color: #039fb0 !important;
+	color: #0578ad !important;
+}
+
+.ant-layout-content {
+	background-color: #e8eff6;
 }

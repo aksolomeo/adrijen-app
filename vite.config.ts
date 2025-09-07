@@ -19,7 +19,7 @@ export default defineConfig({
 		preprocessorOptions: {
 			less: {
 				modifyVars: {
-					"primary-color": "#039fb0", // Ant design primary color
+					"primary-color": "#0578ad",
 				},
 				javascriptEnabled: true,
 			},
