@@ -53,11 +53,13 @@
 			"FEATURES": {
 				"TEMPLATE_EDITOR": {
 					"TITLE": "Template Editor 3.0",
-					"DESCRIPTION": "A custom, multi-functional drag-and-drop editor"
+					"DESCRIPTION": "A custom, multi-functional drag-and-drop editor",
+					"TOOLTIP": " I collaborated with another backend developer over the course of eight months to develop a large and complex feature. I was responsible for implementing the designs, developing functionality, conducting testing, managing the project, and more."
 				},
 				"ROOM_UPGRADES": {
 					"TITLE": "Room Upgrades",
-					"DESCRIPTION": "Enables guests to request room upgrades"
+					"DESCRIPTION": "Enables guests to request room upgrades",
+					"TOOLTIP": "I independently developed Room Upgrades (backend and frontend), with designs provided by a UX/UI designer. The project was completed over a 7-month period, with the sample shown here representing a very small portion of the overall functionality."
 				},
 				"DIGITAL_GUESTBOOK": {
 					"TITLE": "Digital Guestbook",
@@ -69,11 +71,13 @@
 				},
 				"ORDER_REQUESTS": {
 					"TITLE": "Order Requests 2.0",
-					"DESCRIPTION": "A feature that enables clients to manage guest orders"
+					"DESCRIPTION": "A feature that enables clients to manage guest orders",
+					"TOOLTIP": "Developed over 6 months, including responsive email design and delivery, custom client alerts for order placement, order archiving and many more related functionalities."
 				},
 				"TAB_BAR": {
 					"TITLE": "Tab Bar",
-					"DESCRIPTION": "A fully customizable mobile navigation bar"
+					"DESCRIPTION": "A fully customizable mobile navigation bar",
+					"TOOLTIP": " Another independently developed feature - a customizable and responsive tab bar (mobile navigation bar) designed for hotel guests to use within our guestbook web app."
 				},
 				"GROUP_CHECKIN_TOOL": {
 					"TITLE": "Group Check-in Tool",
