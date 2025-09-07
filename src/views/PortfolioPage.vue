@@ -31,7 +31,15 @@
 						</a-image-preview-group>
 					</template>
 
-					<a-card-meta :title="feature.title" :description="feature.description" />
+					<a-card-meta :description="feature.description">
+						<template #title>
+							<span>{{ feature.title }}</span>
+
+							<a-tooltip v-if="feature.tooltip" :title="feature.tooltip">
+								<info-circle-outlined class="portfolio-page__card--tooltip" />
+							</a-tooltip>
+						</template>
+					</a-card-meta>
 				</a-card>
 			</a-col>
 		</a-row>
@@ -40,7 +48,7 @@
 
 <script setup lang="ts">
 	import { useI18n } from "vue-i18n";
-	import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons-vue";
+	import { LeftCircleOutlined, RightCircleOutlined, InfoCircleOutlined } from "@ant-design/icons-vue";
 	import type { PortfolioFeature } from "../interfaces";
 	import DigitalGuestbook from "@/assets/images/portfolio/Digital Guestbook.jpg";
 	import DigitalGuestbookMobile from "@/assets/images/portfolio/Digital Guestbook (Mobile).jpg";
@@ -66,11 +74,13 @@
 			title: t("VIEWS.PORTFOLIO.FEATURES.TEMPLATE_EDITOR.TITLE"),
 			description: t("VIEWS.PORTFOLIO.FEATURES.TEMPLATE_EDITOR.DESCRIPTION"),
 			images: [TemplateEditorEditing, TemplateEditor, InlineEditor, TemplateSelection],
+			tooltip: t("VIEWS.PORTFOLIO.FEATURES.TEMPLATE_EDITOR.TOOLTIP"),
 		},
 		{
 			title: t("VIEWS.PORTFOLIO.FEATURES.ROOM_UPGRADES.TITLE"),
 			description: t("VIEWS.PORTFOLIO.FEATURES.ROOM_UPGRADES.DESCRIPTION"),
 			images: [RoomUpgradesEditing, RoomUpgrades, RoomUpgradesCustomize],
+			tooltip: t("VIEWS.PORTFOLIO.FEATURES.ROOM_UPGRADES.TOOLTIP"),
 		},
 		{
 			title: t("VIEWS.PORTFOLIO.FEATURES.DIGITAL_GUESTBOOK.TITLE"),
@@ -86,11 +96,13 @@
 			title: t("VIEWS.PORTFOLIO.FEATURES.ORDER_REQUESTS.TITLE"),
 			description: t("VIEWS.PORTFOLIO.FEATURES.ORDER_REQUESTS.DESCRIPTION"),
 			images: [OrderRequests, OrderRequestsDrawer],
+			tooltip: t("VIEWS.PORTFOLIO.FEATURES.ORDER_REQUESTS.TOOLTIP"),
 		},
 		{
 			title: t("VIEWS.PORTFOLIO.FEATURES.TAB_BAR.TITLE"),
 			description: t("VIEWS.PORTFOLIO.FEATURES.TAB_BAR.DESCRIPTION"),
 			images: [TabBar],
+			tooltip: t("VIEWS.PORTFOLIO.FEATURES.TAB_BAR.TOOLTIP"),
 		},
 		{
 			title: t("VIEWS.PORTFOLIO.FEATURES.GROUP_CHECKIN_TOOL.TITLE"),
@@ -108,6 +120,12 @@
 
 		&__card {
 			border-radius: 8px;
+
+			&--tooltip {
+				margin-left: 8px;
+				color: #40a9ff;
+				cursor: pointer;
+			}
 		}
 	}
 
@@ -136,6 +154,10 @@
 		color: #fff;
 		opacity: 0.4;
 		z-index: 1;
+	}
+
+	:deep(.ant-card-body) {
+		cursor: default;
 	}
 
 	:deep(.ant-image-mask) {

@@ -17,6 +17,7 @@ export interface PortfolioFeature {
 	title: string;
 	description: string;
 	images: string[];
+	tooltip?: string;
 }
 
 export type SidebarItems = SidebarItem[];
