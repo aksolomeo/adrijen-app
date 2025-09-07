@@ -1,1 +1,0 @@
-import{_ as c,a as t,o as a}from"./index-B5h6x6iL.js";const e={},o={class:"contact-page"};function s(n,_){return a(),t("section",o,"This is a contact page")}const i=c(e,[["render",s],["__scopeId","data-v-3a92c664"]]);export{i as default};
