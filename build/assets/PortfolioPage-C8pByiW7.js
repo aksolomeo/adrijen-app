@@ -1,1 +1,0 @@
-import{_ as o,a as e,o as t}from"./index-B5h6x6iL.js";const s={},a={class:"portfolio-page"};function c(r,_){return t(),e("section",a,"This is a portfolio page")}const i=o(s,[["render",c],["__scopeId","data-v-467be648"]]);export{i as default};
