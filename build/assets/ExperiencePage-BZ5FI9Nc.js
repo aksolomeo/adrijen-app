@@ -1,1 +1,0 @@
-import{_ as e,a as c,o as s}from"./index-B5h6x6iL.js";const a={},n={class:"experience-page"};function o(t,r){return s(),c("section",n,"This is an experience page")}const i=e(a,[["render",o],["__scopeId","data-v-43c00263"]]);export{i as default};
