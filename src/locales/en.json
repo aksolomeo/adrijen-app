@@ -48,6 +48,38 @@
 				"TITLE": "Sports",
 				"DESCRIPTION": "Enthusiastic about both playing and following sports, including football, tennis, handball, table tennis, pool, and chess."
 			}
+		},
+		"PORTFOLIO": {
+			"FEATURES": {
+				"TEMPLATE_EDITOR": {
+					"TITLE": "Template Editor 3.0",
+					"DESCRIPTION": "A custom, multi-functional drag-and-drop editor"
+				},
+				"ROOM_UPGRADES": {
+					"TITLE": "Room Upgrades",
+					"DESCRIPTION": "Enables guests to request room upgrades"
+				},
+				"DIGITAL_GUESTBOOK": {
+					"TITLE": "Digital Guestbook",
+					"DESCRIPTION": "A fully customizable, mobile-friendly drag-and-drop guestbook"
+				},
+				"USER_MANAGEMENT": {
+					"TITLE": "User Management",
+					"DESCRIPTION": "Intended for controlling roles and permissions"
+				},
+				"ORDER_REQUESTS": {
+					"TITLE": "Order Requests 2.0",
+					"DESCRIPTION": "A feature that enables clients to manage guest orders"
+				},
+				"TAB_BAR": {
+					"TITLE": "Tab Bar",
+					"DESCRIPTION": "A fully customizable mobile navigation bar"
+				},
+				"GROUP_CHECKIN_TOOL": {
+					"TITLE": "Group Check-in Tool",
+					"DESCRIPTION": "A tool designed to make the CSM team’s work easier"
+				}
+			}
 		}
 	},
 	"COMPONENTS": {

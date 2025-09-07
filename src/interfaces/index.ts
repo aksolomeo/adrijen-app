@@ -13,5 +13,11 @@ export interface SkillsAndToolsItem {
 	rating: number;
 }
 
+export interface PortfolioFeature {
+	title: string;
+	description: string;
+	images: string[];
+}
+
 export type SidebarItems = SidebarItem[];
 export type SkillsAndTools = SkillsAndToolsItem[];
