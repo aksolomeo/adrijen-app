@@ -20,5 +20,12 @@ export interface PortfolioFeature {
 	tooltip?: string;
 }
 
+export interface ContactForm {
+	name: string;
+	email: string;
+	subject: string;
+	message: string;
+}
+
 export type SidebarItems = SidebarItem[];
 export type SkillsAndTools = SkillsAndToolsItem[];
