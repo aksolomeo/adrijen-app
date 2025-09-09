@@ -84,6 +84,34 @@
 					"DESCRIPTION": "A tool designed to make the CSM team’s work easier"
 				}
 			}
+		},
+		"CONTACT": {
+			"INFO": {
+				"EMAIL": "adrijen.ribic@yahoo.com",
+				"PHONE": "+385998582982",
+				"LINKED_IN": "linkedin.com/in/adrijenribic",
+				"LOCATION": "Ive Andrića 11,\n35400 Nova Gradiška,\nCroatia"
+			},
+			"FORM": {
+				"NAME": {
+					"LABEL": "Your Name",
+					"PLACEHOLDER": "Enter your name"
+				},
+				"EMAIL": {
+					"LABEL": "Email Address",
+					"PLACEHOLDER": "Enter your email"
+				},
+				"SUBJECT": {
+					"LABEL": "Subject",
+					"PLACEHOLDER": "Enter your subject"
+				},
+				"MESSAGE": {
+					"LABEL": "Your Message",
+					"PLACEHOLDER": "Type your message"
+				},
+				"BUTTON": "Send Message",
+				"SUCCESS_MESSAGE": "Message sent successfully!"
+			}
 		}
 	},
 	"COMPONENTS": {
