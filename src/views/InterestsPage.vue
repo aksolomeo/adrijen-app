@@ -18,10 +18,10 @@
 			<a-card hoverable :bordered="false" class="interests-page__card music-production-card">
 				<template #title>
 					<fa-icon icon="music" class="interests-page__card--icon" />
-					{{ $t("VIEWS.INTEREST.MUSIC_PRODUCTION.TITLE") }}
+					{{ $t("VIEWS.INTERESTS.MUSIC_PRODUCTION.TITLE") }}
 				</template>
 
-				<div class="interests-page__card--description">{{ $t("VIEWS.INTEREST.MUSIC_PRODUCTION.DESCRIPTION") }}</div>
+				<div class="interests-page__card--description">{{ $t("VIEWS.INTERESTS.MUSIC_PRODUCTION.DESCRIPTION") }}</div>
 
 				<vue3-audio-player
 					:audio-list="[
@@ -34,7 +34,7 @@
 				/>
 
 				<div class="music-production-card__track-title">
-					{{ $t("VIEWS.INTEREST.MUSIC_PRODUCTION.TRACK_TITLES.DANDELION") }}
+					{{ $t("VIEWS.INTERESTS.MUSIC_PRODUCTION.TRACK_TITLES.DANDELION") }}
 				</div>
 
 				<div style="display: flex; justify-content: center">
@@ -52,7 +52,7 @@
 				/>
 
 				<div class="music-production-card__track-title">
-					{{ $t("VIEWS.INTEREST.MUSIC_PRODUCTION.TRACK_TITLES.HEMOMANCER_MAIN_THEME") }}
+					{{ $t("VIEWS.INTERESTS.MUSIC_PRODUCTION.TRACK_TITLES.HEMOMANCER_MAIN_THEME") }}
 				</div>
 			</a-card>
 
@@ -63,26 +63,28 @@
 						{{ $t("VIEWS.INTEREST.GUITAR.TITLE") }}
 					</template>
 
-					<div class="interests-page__card--description">{{ $t("VIEWS.INTEREST.GUITAR.DESCRIPTION") }}</div>
+					<div class="interests-page__card--description">{{ $t("VIEWS.INTERESTS.GUITAR.DESCRIPTION") }}</div>
 				</a-card>
 
 				<a-card hoverable :bordered="false" class="interests-page__card">
 					<template #title>
 						<fa-icon icon="futbol" class="interests-page__card--icon" />
-						{{ $t("VIEWS.INTEREST.SPORTS.TITLE") }}
+						{{ $t("VIEWS.INTERESTS.SPORTS.TITLE") }}
 					</template>
 
-					<div class="interests-page__card--description">{{ $t("VIEWS.INTEREST.SPORTS.DESCRIPTION") }}</div>
+					<div class="interests-page__card--description">{{ $t("VIEWS.INTERESTS.SPORTS.DESCRIPTION") }}</div>
 				</a-card>
 			</div>
 
 			<a-card hoverable :bordered="false" class="interests-page__card traveling-card">
 				<template #title>
 					<fa-icon icon="person-hiking" class="interests-page__card--icon" />
-					{{ $t("VIEWS.INTEREST.TRAVELING_AND_HIKING.TITLE") }}
+					{{ $t("VIEWS.INTERESTS.TRAVELING_AND_HIKING.TITLE") }}
 				</template>
 
-				<div class="interests-page__card--description">{{ $t("VIEWS.INTEREST.TRAVELING_AND_HIKING.DESCRIPTION") }}</div>
+				<div class="interests-page__card--description">
+					{{ $t("VIEWS.INTERESTS.TRAVELING_AND_HIKING.DESCRIPTION") }}
+				</div>
 
 				<a-carousel autoplay>
 					<div v-for="(img, index) in images" :key="index">
