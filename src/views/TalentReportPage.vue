@@ -41,7 +41,7 @@
 			background: #fff;
 			max-width: 500px;
 			height: 394px;
-			padding: 24px;
+			padding: 0 12px;
 			text-align: center;
 			font-size: 16px;
 			line-height: 1.6;
