@@ -10,6 +10,7 @@
 	const { t } = useI18n();
 	const { userAlias } = storeToRefs(mainStore);
 	const formRef = ref();
+	const isLoading = ref(false);
 	const rules = {
 		alias: [{ required: true, message: t("VIEWS.LANDING.INPUT.VALIDATION_MSG"), trigger: "blur" }],
 	};
@@ -28,7 +29,12 @@
 			.validate()
 			.then(() => {
 				if (userAlias.value) {
-					emit("enter");
+					isLoading.value = true;
+
+					setTimeout(() => {
+						isLoading.value = false;
+						emit("enter");
+					}, 1000);
 				}
 			})
 			.catch(error => {
@@ -56,7 +62,14 @@
 					</a-form-item>
 				</a-form>
 
-				<a-button type="primary" size="large" :disabled="!userAlias" class="landing-page__btn" @click="onEnter">
+				<a-button
+					type="primary"
+					size="large"
+					:disabled="!userAlias"
+					:loading="isLoading"
+					class="landing-page__btn"
+					@click="onEnter"
+				>
 					{{ $t("VIEWS.LANDING.BUTTON") }}
 				</a-button>
 			</section>
