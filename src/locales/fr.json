@@ -11,8 +11,117 @@
 		"HOME": {
 			"WELCOME_TEXT": {
 				"TITLE": "Bienvenue, {userAlias}!",
-				"DESCRIPTION": "Salut, je suis Adrijen — Développeur Fullstack créant des applications web modernes, intuitives, responsives et soignées. J’aide les entreprises à transformer leurs idées en produits numériques impactants. N’hésitez pas à explorer mon site pour en savoir plus sur moi.\n\nPour un aperçu rapide, vous pouvez consulter mon CV en une page :",
+				"DESCRIPTION": "Bonjour, je suis Adrijen — un développeur Fullstack avec plus de 5 ans d'expérience dans la création d'applications web modernes, intuitives, réactives et soignées. J'aide les entreprises à transformer des idées en produits numériques qui ont un impact réel. N'hésitez pas à explorer mon site pour en savoir plus sur moi.\n\nPour un aperçu rapide, vous pouvez consulter mon CV sur une seule page :",
 				"BUTTON": "Voir mon CV"
+			}
+		},
+		"EDUCATION": {
+			"DIPLOMA_COMPUTER_SCIENCE": {
+				"TITLE": "Diplôme AP en Informatique",
+				"EDUCATIONAL_INSTITUTION": "Business Academy Aarhus",
+				"DETAILS": "2015 - 2018 · Aarhus"
+			},
+			"DIPLOMA_WEB_DEVELOPMENT": {
+				"TITLE": "Diplôme du programme Bachelor en Développement Web",
+				"EDUCATIONAL_INSTITUTION": "Business Academy Aarhus",
+				"DETAILS": "2019 - 2021 · Aarhus"
+			}
+		},
+		"TALENT_REPORT": {
+			"DESCRIPTION": "Ce rapport a été créé par <strong>FirstMind</strong> — une plateforme d'évaluation humaine basée à Londres, qui aide les leaders et les organisations à prendre de meilleures décisions concernant les personnes, à libérer le potentiel individuel et à construire des équipes performantes. Basé sur plus de 25 ans de recherche en psychologie et neurosciences, FirstMind fournit des informations exploitables sur le talent, la motivation et la dynamique d'équipe. L'évaluation m'a donné une perspective claire sur mes comportements, mes forces et mes motivations.",
+			"REPORT_LINK_TEXT": "Lire le rapport complet sur les talents"
+		},
+		"INTERESTS": {
+			"MUSIC_PRODUCTION": {
+				"TITLE": "Production musicale",
+				"DESCRIPTION": "J'ai composé les deux morceaux originaux suivants dans mon studio à domicile.",
+				"TRACK_TITLES": {
+					"DANDELION": "Pissenlit",
+					"HEMOMANCER_MAIN_THEME": "Thème principal de Hemomancer"
+				}
+			},
+			"GUITAR": {
+				"TITLE": "Guitare",
+				"DESCRIPTION": "La guitare est ma passion depuis presque 20 ans. Pendant cette période, j'ai joué dans des groupes ainsi qu'en solo."
+			},
+			"TRAVELING_AND_HIKING": {
+				"TITLE": "Voyages & Randonnées",
+				"DESCRIPTION": "J'aime voyager, faire de la randonnée et camper. J'adore rester actif, découvrir différentes cultures et créer des liens significatifs avec les gens et la nature."
+			},
+			"SPORTS": {
+				"TITLE": "Sports",
+				"DESCRIPTION": "Je suis passionné par la pratique et le suivi de divers sports, notamment le football, le tennis, le handball, le tennis de table, le billard et les échecs."
+			}
+		},
+		"PORTFOLIO": {
+			"FEATURES": {
+				"TEMPLATE_EDITOR": {
+					"TITLE": "Éditeur de modèles 3.0",
+					"DESCRIPTION": "Un éditeur personnalisé, multifonctionnel, en glisser-déposer",
+					"TOOLTIP": "J'ai collaboré avec un autre développeur backend pendant huit mois pour développer une fonctionnalité large et complexe. J'étais responsable de la mise en œuvre des designs, du développement des fonctionnalités, des tests, de la gestion du projet et plus encore."
+				},
+				"ROOM_UPGRADES": {
+					"TITLE": "Améliorations de chambre",
+					"DESCRIPTION": "Permet aux clients de demander des surclassements de chambre",
+					"TOOLTIP": "J'ai développé les améliorations de chambre (backend et frontend) de manière indépendante, avec des designs fournis par un designer UX/UI. Le projet a été réalisé sur 7 mois, et l'exemple montré ici représente une petite partie de la fonctionnalité globale."
+				},
+				"DIGITAL_GUESTBOOK": {
+					"TITLE": "Livre d'or numérique",
+					"DESCRIPTION": "Un livre d'or entièrement personnalisable et adapté aux mobiles, avec glisser-déposer"
+				},
+				"USER_MANAGEMENT": {
+					"TITLE": "Gestion des utilisateurs",
+					"DESCRIPTION": "Destiné au contrôle des rôles et des permissions"
+				},
+				"ORDER_REQUESTS": {
+					"TITLE": "Demandes de commandes 2.0",
+					"DESCRIPTION": "Une fonctionnalité permettant aux clients de gérer les commandes des invités",
+					"TOOLTIP": "Développé sur 6 mois, incluant la conception et l'envoi d'e-mails responsives, des alertes clients personnalisées pour la commande, l'archivage des commandes et de nombreuses autres fonctionnalités liées."
+				},
+				"TAB_BAR": {
+					"TITLE": "Barre d'onglets",
+					"DESCRIPTION": "Une barre de navigation mobile entièrement personnalisable",
+					"TOOLTIP": "Une autre fonctionnalité développée indépendamment — une barre d'onglets personnalisable et responsive (barre de navigation mobile) pour les clients d'hôtel utilisant notre application web du livre d'or."
+				},
+				"GROUP_CHECKIN_TOOL": {
+					"TITLE": "Outil d'enregistrement de groupe",
+					"DESCRIPTION": "Un outil conçu pour faciliter le travail de l'équipe CSM"
+				}
+			}
+		},
+		"EXPERIENCE": {
+			"TIMELINE": {
+				"OBRT": "<strong>Adrijen obrt za informatičke usluge, Propriétaire Adrijen Ribić</strong><br /> Propriétaire d'entreprise (Freelance)<br /> 08/2022 – Présent • Nova Gradiška, Croatie<br /><div style='margin-top: 8px' /><span class='timeline-description'>J'ai fondé et géré ma propre entreprise en freelance, acquérant une expérience pratique dans la gestion d'entreprise<br /> et le travail à distance via des plateformes RH et paie telles que <a href='https://www.deel.com' target='_blank' rel='noopener noreferrer'>Deel</a> et <a href='https://www.remote.com' target='_blank' rel='noopener noreferrer'>Remote</a>.</span>",
+				"DIGITAL_GUEST": "<strong>DigitalGuest</strong><br /> Développeur Web Full-Stack<br /> 07/2020 – 05/2025 • Aarhus, Danemark<br /><div style='margin-top: 8px' /><span class='timeline-description'>Développement de nombreuses fonctionnalités et solutions numériques à grande échelle pour l'industrie hôtelière. 2 ans sur site à Aarhus et 3 ans en télétravail depuis la Croatie.</span>",
+				"AROSII": "<strong>Arosii A/S</strong><br /> Développeur Web Full-Stack (Stage)<br /> 08/2017 – 10/2017 • Aarhus, Danemark<br /><div style='margin-top: 8px' /><span class='timeline-description'>Développement d'une application iOS et Android multiplateforme pour aider les enfants handicapés dans leurs activités quotidiennes.</span>"
+			}
+		},
+		"CONTACT": {
+			"INFO": {
+				"EMAIL": "adrijen.ribic@yahoo.com",
+				"PHONE": "+385998582982",
+				"LINKED_IN": "linkedin.com/in/adrijenribic",
+				"LOCATION": "Ive Andrića 11,\n35400 Nova Gradiška,\nCroatie"
+			},
+			"FORM": {
+				"NAME": {
+					"LABEL": "Votre nom",
+					"PLACEHOLDER": "Entrez votre nom"
+				},
+				"EMAIL": {
+					"LABEL": "Adresse e-mail",
+					"PLACEHOLDER": "Entrez votre e-mail"
+				},
+				"SUBJECT": {
+					"LABEL": "Objet",
+					"PLACEHOLDER": "Entrez votre objet"
+				},
+				"MESSAGE": {
+					"LABEL": "Votre message",
+					"PLACEHOLDER": "Tapez votre message"
+				},
+				"BUTTON": "Envoyer le message",
+				"SUCCESS_MESSAGE": "Message envoyé avec succès!"
 			}
 		}
 	},
@@ -20,8 +129,28 @@
 		"SIDEBAR": {
 			"ITEMS": {
 				"HOME": "Accueil",
-				"ABOUT_ME": "À propos de moi",
-				"CONTACT_ME": "Contactez-moi"
+				"ABOUT_ME": {
+					"LABEL": "À propos de moi",
+					"SUB_MENU": {
+						"EDUCATION": "Éducation",
+						"SKILLS_AND_TOOLS": "Compétences & Outils",
+						"TALENT_REPORT": "Rapport de talents",
+						"INTERESTS": "Centres d'intérêt"
+					}
+				},
+				"CAREER": {
+					"LABEL": "Carrière",
+					"SUB_MENU": {
+						"PORTFOLIO": "Portfolio",
+						"EXPERIENCE": "Expérience"
+					}
+				},
+				"CONTACT": "Contact"
+			}
+		},
+		"TOP_BAR_NAV": {
+			"CODE_BTN": {
+				"TOOLTIP": "Voir le code source sur GitHub"
 			}
 		}
 	}
