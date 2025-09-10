@@ -60,7 +60,7 @@
 				<a-card hoverable :bordered="false" class="interests-page__card">
 					<template #title>
 						<fa-icon icon="guitar" class="interests-page__card--icon" />
-						{{ $t("VIEWS.INTEREST.GUITAR.TITLE") }}
+						{{ $t("VIEWS.INTERESTS.GUITAR.TITLE") }}
 					</template>
 
 					<div class="interests-page__card--description">{{ $t("VIEWS.INTERESTS.GUITAR.DESCRIPTION") }}</div>
