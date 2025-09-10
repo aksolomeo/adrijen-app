@@ -11,6 +11,7 @@
 		SolutionOutlined,
 		FolderOpenOutlined,
 		ToolOutlined,
+		BarChartOutlined,
 		ProfileOutlined,
 	} from "@ant-design/icons-vue";
 	import type { SidebarItem, SidebarItems } from "@/interfaces";
@@ -44,6 +45,12 @@
 					key: "skills-and-tools",
 					icon: h(ToolOutlined),
 					route: "/about/skills-and-tools",
+				},
+				{
+					label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.TALENT_REPORT"),
+					key: "talent-report",
+					icon: h(BarChartOutlined),
+					route: "/about/talent-report",
 				},
 				{
 					label: t("COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.INTERESTS"),

@@ -25,6 +25,12 @@ const router = createRouter({
 					component: () => import("../views/SkillsAndToolsPage.vue"),
 				},
 				{
+					path: "/about/talent-report",
+					name: "talent-report",
+					meta: { title: "COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.TALENT_REPORT" },
+					component: () => import("../views/TalentReportPage.vue"),
+				},
+				{
 					path: "/about/interests",
 					name: "interests",
 					meta: { title: "COMPONENTS.SIDEBAR.ITEMS.ABOUT_ME.SUB_MENU.INTERESTS" },
