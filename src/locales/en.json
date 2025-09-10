@@ -27,7 +27,11 @@
 				"DETAILS": "2019 - 2021 · Aarhus"
 			}
 		},
-		"INTEREST": {
+		"TALENT_REPORT": {
+			"DESCRIPTION": "This report was created by <strong>FirstMind</strong> — \na London-based human assessment platform that helps leaders and organizations make better people decisions, unlock individual potential and build high-performing teams. Built on more than 25 years of research in psychology and neuroscience, FirstMind provides actionable insights into talent, motivation, and team dynamics. The assessment gave me a clear perspective on my behaviors, strengths and motivations.",
+			"REPORT_LINK_TEXT": "Read the full Talent Report"
+		},
+		"INTERESTS": {
 			"MUSIC_PRODUCTION": {
 				"TITLE": "Music Production",
 				"DESCRIPTION": "I have composed the following two original tracks\n at my home studio.",
@@ -123,6 +127,7 @@
 					"SUB_MENU": {
 						"EDUCATION": "Education",
 						"SKILLS_AND_TOOLS": "Skills & Tools",
+						"TALENT_REPORT": "Talent Report",
 						"INTERESTS": "Interests"
 					}
 				},
