@@ -60,7 +60,7 @@
 				<div>
 					<div class="contact-page-container__info--item">
 						<fa-icon icon="envelope" />
-						<span>{{ $t("VIEWS.CONTACT.INFO.EMAIL") }}</span>
+						<span>adrijen.ribic@yahoo.com</span>
 					</div>
 
 					<div class="contact-page-container__info--item">
@@ -99,7 +99,7 @@
 					<a-form-item :label="$t('VIEWS.CONTACT.FORM.MESSAGE.LABEL')">
 						<a-textarea
 							v-model:value="form.message"
-							rows="4"
+							:rows="4"
 							:placeholder="$t('VIEWS.CONTACT.FORM.MESSAGE.PLACEHOLDER')"
 							style="resize: none"
 						/>
