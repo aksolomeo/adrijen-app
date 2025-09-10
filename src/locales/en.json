@@ -89,6 +89,13 @@
 				}
 			}
 		},
+		"EXPERIENCE": {
+			"TIMELINE": {
+				"OBRT": "<strong>Adrijen obrt za informatičke usluge, vl. Adrijen Ribić</strong><br /> Company Owner (Freelance)<br /> 08/2022 – Present • Nova Gradiška, Croatia<br /><div style='margin-top: 8px' /><span class='timeline-description'>Founded and managed my own freelance company, gaining hands-on experience in running a business<br /> and working remotely using HR and payroll platforms such as <a href='https://www.deel.com' target='_blank' rel='noopener noreferrer'>Deel</a> and <a href='https://www.remote.com' target='_blank' rel='noopener noreferrer'>Remote</a>.</span>",
+				"DIGITAL_GUEST": "<strong>DigitalGuest</strong><br /> Full-Stack Web Developer<br /> 07/2020 – 05/2025 • Aarhus, Denmark<br /><div style='margin-top: 8px' /><span class='timeline-description'>Developed numerous large-scale features and digital solutions tailored to the hospitality industry. Worked 2 years on-site with the team in central Aarhus and 3 years remotely from Croatia.</span>",
+				"AROSII": "<strong>Arosii A/S</strong><br /> Full-Stack Web Developer (Internship)<br /> 08/2017 – 10/2017 • Aarhus, Denmark<br /><div style='margin-top: 8px' /><span class='timeline-description'>Developed a cross-platform iOS and Android application to assist children with disabilities<br /> in their daily activities.</span>"
+			}
+		},
 		"CONTACT": {
 			"INFO": {
 				"EMAIL": "adrijen.ribic@yahoo.com",
