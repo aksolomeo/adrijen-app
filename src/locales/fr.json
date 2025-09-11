@@ -11,7 +11,7 @@
 		"HOME": {
 			"WELCOME_TEXT": {
 				"TITLE": "Bienvenue, {userAlias}!",
-				"DESCRIPTION": "Bonjour, je suis Adrijen — un développeur Fullstack avec plus de 5 ans d'expérience dans la création d'applications web modernes, intuitives, réactives et soignées. J'aide les entreprises à transformer des idées en produits numériques qui ont un impact réel. N'hésitez pas à explorer mon site pour en savoir plus sur moi.\n\nPour un aperçu rapide, vous pouvez consulter mon CV sur une seule page :",
+				"DESCRIPTION": "Bonjour, je suis Adrijen — un développeur Full-stack avec plus de 5 ans d'expérience dans la création d'applications web modernes, intuitives, réactives et soignées. J'aide les entreprises à transformer des idées en produits numériques qui ont un impact réel. N'hésitez pas à explorer mon site pour en savoir plus sur moi.\n\nPour un aperçu rapide, vous pouvez consulter mon CV sur une seule page :",
 				"BUTTON": "Voir mon CV"
 			}
 		},
