@@ -11,7 +11,7 @@
 		"HOME": {
 			"WELCOME_TEXT": {
 				"TITLE": "Willkommen, {userAlias}!",
-				"DESCRIPTION": "Hallo, ich bin Adrijen — ein Fullstack-Entwickler mit über 5 Jahren Erfahrung in der Erstellung moderner, intuitiver, responsiver und ansprechender Webanwendungen. Ich helfe Unternehmen dabei, Ideen in digitale Produkte umzusetzen, die einen echten Unterschied machen. Schau dich gerne auf meiner Website um, um mehr über mich zu erfahren.\n\nFür einen schnellen Überblick kannst du meinen einseitigen Lebenslauf ansehen:",
+				"DESCRIPTION": "Hallo, ich bin Adrijen — ein Full-stack-Entwickler mit über 5 Jahren Erfahrung in der Erstellung moderner, intuitiver, responsiver und ansprechender Webanwendungen. Ich helfe Unternehmen dabei, Ideen in digitale Produkte umzusetzen, die einen echten Unterschied machen. Schau dich gerne auf meiner Website um, um mehr über mich zu erfahren.\n\nFür einen schnellen Überblick kannst du meinen einseitigen Lebenslauf ansehen:",
 				"BUTTON": "Meinen Lebenslauf ansehen"
 			}
 		},
